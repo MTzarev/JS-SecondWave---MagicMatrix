@@ -6,7 +6,6 @@ function magicMatrices(matrix) {
         let rowSum = matrix[i].reduce((a, b) => a + b);
         if (rowSum != targetSum) {
             isMagic=false;
-
         }
     }
     for (let col = 0; col < matrix[0].length; col++) {
@@ -16,13 +15,9 @@ function magicMatrices(matrix) {
         }
         if (colSum !== targetSum) {
             isMagic=false;
-
         }
     }
-
     console.log(isMagic);
-
-
 }
 magicMatrices([[11, 32, 45],
 [21, 0, 1],
